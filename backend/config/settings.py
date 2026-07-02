@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-e(k&2!kh5phc0r*z9h)a*1%q(9dym3x&ejq3--8)ptehi!&sn6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "shallion-connect-dating.onrender.com",
+    ".onrender.com",
+]
 
 
 INSTALLED_APPS = [
@@ -132,4 +137,9 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://shallion-connect-dating.onrender.com",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://shallion-connect-dating.onrender.com",
 ]
